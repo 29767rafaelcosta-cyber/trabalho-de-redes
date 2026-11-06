@@ -1,0 +1,135 @@
+/* ==========================================================
+   AutoPeças Pro - Tema Turbo & Visual Apelativo de Alta Energia
+   Cores: Carbono Profundo, Laranja Néon, Vermelho Racing & Verde Elétrico
+   ========================================================== */
+
+:root {
+    --turbo-orange: #ff5722;
+    --turbo-red: #ff1744;
+    --turbo-yellow: #ffc107;
+    --neon-blue: #00d2ff;
+    --neon-green: #00e676;
+    --dark-carbon: #090d16;
+    --dark-card: #111827;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
+
+/* Gradientes Vibrantes & Racing */
+.bg-turbo-gradient {
+    background: linear-gradient(135deg, #ff5722 0%, #ff1744 50%, #9c27b0 100%);
+}
+
+.bg-dark-mesh {
+    background-color: #090d16;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(255, 87, 34, 0.18) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(0, 210, 255, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(255, 23, 68, 0.12) 0px, transparent 50%);
+}
+
+/* Botões com Brilho Neon e Efeito de Pulso */
+.btn-turbo {
+    background: linear-gradient(135deg, #ff5722 0%, #ff1744 100%);
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 20px rgba(255, 87, 34, 0.35);
+}
+
+.btn-turbo:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 23, 68, 0.55);
+}
+
+.btn-neon-green {
+    background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
+    color: #090d16;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(0, 230, 118, 0.3);
+}
+
+.btn-neon-green:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 230, 118, 0.5);
+}
+
+/* Cartões de Peças com Glow ao Passar o Rato */
+.part-card {
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    border-radius: 1.25rem;
+}
+
+.part-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 87, 34, 0.5);
+    box-shadow: 0 20px 35px -10px rgba(255, 87, 34, 0.25), 0 0 15px rgba(255, 87, 34, 0.15);
+}
+
+/* Badges chamativos com efeito flame */
+.badge-flame {
+    background: linear-gradient(135deg, #ff9100 0%, #ff1744 100%);
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 10px rgba(255, 23, 68, 0.4);
+}
+
+.badge-green-power {
+    background: linear-gradient(135deg, #00e676 0%, #00c853 100%);
+    color: #090d16;
+    font-weight: 900;
+}
+
+/* Cartões de Métodos de Pagamento */
+.payment-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.payment-badge:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ff5722;
+    transform: translateY(-2px);
+}
+
+/* Imagens dos Produtos com Contorno e Destaque */
+.part-img-box {
+    background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.part-img-box img {
+    transition: transform 0.4s ease;
+}
+
+.part-card:hover .part-img-box img {
+    transform: scale(1.08) rotate(1deg);
+}
+
+/* Efeito de Vidro Escuro Moderno */
+.glass-panel {
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
